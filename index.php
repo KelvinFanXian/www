@@ -8,6 +8,7 @@ session_start();
 	// this file
 	$arti = $artis[array_rand($artis)];
 	$textContent = file_get_contents($arti);
+	$textContent = addslashes($textContent);
 	$title = explode('/', $arti);
  ?> 
 <!DOCTYPE html>
