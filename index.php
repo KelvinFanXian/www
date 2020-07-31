@@ -35,6 +35,7 @@ background: transparent;
 		<input type="text" id="show"/>
 	</div>
 	<script src="marked.min.js"></script>
+	<script src="js/common.js"></script>
 	<script>
 	  // 关闭右键菜单
 	  document.oncontextmenu = function(){
@@ -46,6 +47,9 @@ background: transparent;
 			switch(code){
 				case 78: //N
 				 location.reload();
+				 break;
+				case 13: //Enter
+				 toggleFullScreen();
 				 break;
 				
 				case 84: //T
@@ -60,9 +64,6 @@ background: transparent;
 				case 68: //D
 				 window.scroll(0, window.scrollY + (window.innerHeight/2));
 				 break;
-
-
-
 
 				case 72: //H
 				 window.scroll(window.scrollX - 30, window.scrollY);
