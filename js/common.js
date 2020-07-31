@@ -32,3 +32,8 @@ function isFull() {
     );//!document.webkitIsFullScreen都为true。因此用!!
     return isFull;
 }
+
+//toggle全屏
+function toggleFullScreen() {
+    isFull()? exitFullscreen() : fullScreen();
+}
