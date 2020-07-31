@@ -64,16 +64,16 @@ right:5vw;
 
 
 				case 72: //H
-				 window.scroll(window.scrollX - 30, 0);
+				 window.scroll(window.scrollX - 30, window.scrollY);
 				 break;
 				case 74: //J
-				 window.scroll(0, window.scrollY + 30);
+				 window.scroll(window.scrollX, window.scrollY + 30);
 				 break;
 				case 75: //K
-				 window.scroll(0, window.scrollY - 30);
+				 window.scroll(window.scrollX, window.scrollY - 30);
 				 break;
 				case 76: //L
-				 window.scroll(window.scrollX + 30, 0);
+				 window.scroll(window.scrollX + 30, window.scrollY);
 				 break;
 			}
 		}
