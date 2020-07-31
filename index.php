@@ -24,7 +24,8 @@ top: 5vh;
 right:5vw;
 }
 #show{
-	border:1px dashed ivory;
+border:1px dashed ivory;
+background: transparent;
 }
 </style>
 <body >
