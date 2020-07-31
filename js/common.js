@@ -24,3 +24,11 @@ function exitFullscreen() {
         document.webkitExitFullscreen();
     }
 }
+
+//是否全屏
+function isFull() {
+    var isFull=!!(document.webkitIsFullScreen || document.mozFullScreen || 
+        document.msFullscreenElement || document.fullscreenElement
+    );//!document.webkitIsFullScreen都为true。因此用!!
+    return isFull;
+}
