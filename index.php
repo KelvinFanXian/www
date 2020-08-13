@@ -31,6 +31,9 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<title><?php echo explode('.', $file)[0] ?></title>
+	<meta content="www.kelvin.vip" name="Copyright"> 
+	<meta content="<?php echo explode('.', $file)[0] ?>" name="Keywords"> 
+	<meta content="<?php echo explode('.', $file)[0] ?>" name="Description"> 
 	<link rel="icon" sizes="48x48" href="http://kelvin.vip/favorite.ico">
 </head>
 <style>
@@ -84,7 +87,14 @@ background: transparent;
 				case 83: //S stock
 				 location.href='http://kelvin.vip?t=stock';
 				 break;
+				case 86: //V JVM
+				 location.href='http://kelvin.vip?t=jvm';
+				 break;
+				case 80: //P pattern
+				 location.href='http://kelvin.vip?t=pattern';
+				 break;
 
+				// operation
 				case 84: //T
 				 window.scroll(0, 0);
 				 break;
